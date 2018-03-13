@@ -10,7 +10,10 @@ public class GameFrame extends Frame implements WindowListener{
 										// components from left to right with in the Frame
 		addWindowListener(this);
 		setTitle("Defend-Earth");
-		setSize(1000, 1500);
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		int width = (int) screenSize.getWidth();
+		int height = (int) screenSize.getHeight();
+		setSize(width, height);
 		setVisible(true);
 	}
 	
